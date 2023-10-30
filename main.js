@@ -30,3 +30,20 @@ BONUS: la funzione deve funzionare anche se l'utente scrive il nome tutto maiusc
 Buon weekend, buone vacanzine e buon ripasso 💪🏻 
 
 P.S.: la registrazione della lezione è già online */
+
+/*
+
+1. Crea una funzione che crea la versione girata di una parola.Chiedi all'utente una parola e mostra la versione girata della parola.
+*/
+function giraParola(x) {
+    let parolaGirata = "";
+    for (let i = x.length - 1; i >= 0; i--) {
+        parolaGirata += x[i];
+    }
+    return parolaGirata;
+
+}
+const parolaUtente = prompt("Scrivi la parola che vuoi girare");
+const risultato = giraParola(parolaUtente)
+console.log(risultato);
+
