@@ -1,18 +1,17 @@
 /* Non siete obbligati a stampare i risultati del documento. Consideratelo un BONUS su ogni esercizio
 
-1. Crea una funzione che crea la versione girata di una parola. Chiedi all'utente una parola e mostra la versione girata della parola.
+1. Crea una funzione che crea la versione girata di una parola. 
+Chiedi all'utente una parola e mostra la versione girata della parola.
 
-function giraParola(x) {
+function giraParola() {
     let parolaGirata = "";
-    for (let i = x.length - 1; i >= 0; i--) {
-        parolaGirata += x[i];
+    const input = prompt("Inserisci la parola");
+    for (let i = input.length - 1; i >= 0; i--) {
+        parolaGirata = parolaGirata + input[i];
     }
-    return parolaGirata;
-
+    console.log(parolaGirata);
 }
-const parolaUtente = prompt("Scrivi la parola che vuoi girare");
-const risultato = giraParola(parolaUtente)
-console.log(risultato);
+giraParola();
 
 
 2. Crea una funzione che concatena una lista di stringhe. Chiedi all'utente quante stringhe vuole concatenare e poi mostragli il risultato.
@@ -26,20 +25,6 @@ Consiglio: potete creare la stringa 'abcdefghijklmnopqrstuvz' e con un ciclo for
 Se la maggioranza dei lanci sono uguali a ciò che ha puntato l'utente, mostragli che ha vinto. Altrimenti, mostragli che ha perso.
 
 6. Crea una funzione che genera il lancio di un dado a 6 facce (ritorna un numero casuale tra 1 e 6). Quindi simula un lancio per il computer e un lancio per l'utente. Mostra all'utente quanto è stato il risultato del computer e quanto è stato il risultato dell'utente e comunicagli se ha vinto o meno.
-
-let dadoUtente = Math.floor(Math.random() * 6) + 1;
-let dadoComputer = Math.floor(Math.random() * 6) + 1;
-prompt("Schiacci un bottone per giocare");
-let user = console.log(dadoUtente);
-let computer = console.log(dadoComputer);
-
-if (dadoUtente > dadoComputer) {
-  alert("Hai vinto");
-} else if (dadoUtente === dadoComputer) {
-  alert("Pareggio");
-} else {
-  alert("Hai perso");
-}
 
 7. Crea una funzione che simula un lancio della roulette (deve ritornare un numero casuale tra 0 e 36).
 Quindi chiedi all'utente se vuole puntare su un numero o su pari/dispari. Quindi esegui un lancio della roulette e fagli sapere se ha vinto.
@@ -57,4 +42,5 @@ BONUS: la funzione deve funzionare anche se l'utente scrive il nome tutto maiusc
 Buon weekend, buone vacanzine e buon ripasso 💪🏻 
 
 P.S.: la registrazione della lezione è già online */
+
 
