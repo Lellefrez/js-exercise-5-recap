@@ -14,9 +14,23 @@ function giraParola() {
 giraParola();
 
 
-2. Crea una funzione che concatena una lista di stringhe. Chiedi all'utente quante stringhe vuole concatenare e poi mostragli il risultato.
+2. Crea una funzione che concatena una lista di stringhe. 
+Chiedi all'utente quante stringhe vuole concatenare e poi mostragli il risultato.
 
-3. Crea una funzione che calcola il doppio di un numero. Quindi chiedi all'utente 10 numeri. Per ogni numero, mostra all'utente il doppio, usando la funzione.
+function concatenaStringhe(n) {
+    const arr = ["abc", "def", "poiu", "kjhg"];
+    let stringheConcatenate = "";
+    for (i = 0; i <= n; i++) {
+        stringheConcatenate += arr[i];
+    }
+    console.log(stringheConcatenate);
+}
+const inputUtente = parseInt(prompt("Quante stringhe vuoi concatenare?"));
+concatenaStringhe(inputUtente);
+
+3. Crea una funzione che calcola il doppio di un numero. 
+Quindi chiedi all'utente 10 numeri. Per ogni numero, mostra all'utente il doppio, 
+usando la funzione.
 
 4. Crea una funzione che transforma una stringa in maiuscolo o minuscolo in base ad un parametro. Quindi, crea un array che contiene tutte le lettere dell'alfabeto, ciascuna randomicamente maiuscola o minuscola.
 Consiglio: potete creare la stringa 'abcdefghijklmnopqrstuvz' e con un ciclo for controllare ogni carattere della stringa, ovvero ogni lettera dell'alfabeto.
@@ -42,5 +56,4 @@ BONUS: la funzione deve funzionare anche se l'utente scrive il nome tutto maiusc
 Buon weekend, buone vacanzine e buon ripasso 💪🏻 
 
 P.S.: la registrazione della lezione è già online */
-
 
